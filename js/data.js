@@ -85,6 +85,7 @@ const getData = async () => {
     try {
         const api = await fetch(url);
         const data = await api.json();
+        console.log(data);
         displayResults(data);
     } catch (err) {
         console.log(err);
