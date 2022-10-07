@@ -79,7 +79,7 @@ function displayResults(products) {
     }
 }
 
-let url = "../database/mobileData.json";
+let url = "database/mobileData.json";
 
 const getData = async () => {
     try {
