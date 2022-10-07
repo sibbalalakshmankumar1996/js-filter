@@ -85,9 +85,10 @@ const getData = async () => {
     try {
         const api = await fetch(url);
         const data = await api.json();
-        console.log(data.mobileData);
-        console.log(typeof(data.mobileData));
-        displayResults(data.mobileData);
+        console.log(data);
+        let {mobileData} = data;
+        console.log(typeof(mobileData));
+        displayResults(mobileData);
     } catch (err) {
         console.log(err);
     }
