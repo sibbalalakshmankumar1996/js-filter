@@ -1,0 +1,64 @@
+@import "variables";
+
+@mixin header-mobile-text{
+    color:$dark_color;
+    font-family:$font_roboto;
+    font-weight:900;
+}
+@mixin header-store-text{
+    color:$red_color;
+    font-family:$font_roboto;
+    font-weight:900;
+}
+@mixin navlinks{
+    color:#1A1A1A !important;
+    font-family:$font_roboto;
+    font-weight:500;
+}
+@mixin price-range{
+    width:17px;
+    height:17px;
+    background:$red_color;
+    border-radius:50%;
+    pointer-events:auto;
+}
+@mixin filter-data-title{
+    color:$dark_color;
+    font-family:$font_roboto;
+    font-weight:700;
+}
+
+@mixin filter-data-text{
+    color:$dark_color;
+    font-family:$font_roboto;
+    font-weight:400;
+}
+@mixin click-button{
+    background-color:#0D429E;
+    color:$white_color;
+    font-family: $font_roboto;
+    font-weight:400;
+    border:none;
+    cursor:pointer;
+    text-align:center;
+}
+@mixin mobile-title{
+    color:$dark_color;
+    font-family:$font_roboto;
+    font-weight:500;
+}
+
+@mixin breakpoint($point){
+    @if $point == smallmobile{
+        @media screen and (min-width:300px) and (max-width:575px) {@content; }
+    }
+    @if $point == tablet{
+        @media screen and (min-width:476px) and (max-width:991px) {@content; }
+    }
+    @if $point == laptop{
+        @media screen and (min-width:992px) and (max-width:1365px) {@content; }
+    }
+    @if $point == desktop{
+        @media screen and (min-width:1366px) {@content; }
+    }
+}

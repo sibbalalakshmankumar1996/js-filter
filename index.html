@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/5.0.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/c19579d657.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-container">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container">
+                <a class="navbar-brand nav-mobile-text" href="#">MOBILE <span class="nav-store-text">STORE</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active nav-link-text" id="navItem1" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-text" id="navItem2" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-text" id="navItem3" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-text" id="navItem4" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-text" id="navItem5" href="#">Markets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-section">
+        <div class="container-lg gx-0">
+            <div class="row gx-0">
+                <aside class="col-12 col-md-4 col-lg-4 col-xl-3 pe-3">
+                    <section class="filter-section d-flex align-items-center justify-content-between mt-2">
+                        <h1 class="heading">FILTER BY</h1>
+                        <div class="filter-logo">
+                            <img src="images/filter.png" alt="Filter-logo" class="filter-image" />
+                        </div>
+                    </section>
+                    <div class="price-range-section mt-3 d-lg-block">
+                        <h2 class="filter-data-title mb-2">PRICE RANGE</h2>
+                        <div class="price-input" id="priceInput">
+                            <span class="data">Min</span>
+                            <input type="number" title="Minimum-price" class="input-min" value="10000" />
+                            <div class="separator">-</div>
+                            <span class="data">Max</span>
+                            <input type="number" title="Maximum-price" class="input-max" value="100000" />
+                        </div>
+                        <div class="slider mt-3">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input title="price-ranges" type="range" class="range-min" min="0" max="150000"
+                                value="10000" step="1000" />
+                            <input title="price-ranges" type="range" class="range-max" min="0" max="150000"
+                                value="100000" step="1000" />
+                        </div>
+                    </div>
+                    <div class="brand-section mt-4">
+                        <h2 class="filter-data-title">COLOR</h2>
+                        <ul class="d-flex flex-wrap mt-2 list-unstyled" id="colorContainer"></ul>
+                    </div>
+                    <div class="brand-section mt-4">
+                        <h2 class="filter-data-title">BRAND</h2>
+                        <ul class="d-flex flex-wrap mt-2 list-unstyled" id="brandContainer"></ul>
+                    </div>
+
+                    <div class="storage-section mt-4">
+                        <h2 class="filter-data-title">STORAGE</h2>
+                        <ul class="d-flex flex-wrap mt-2 list-unstyled" id="storageContainer"></ul>
+                    </div>
+                    <div class="ram-section mt-4">
+                        <h2 class="filter-data-title">RAM</h2>
+                        <ul class="d-flex flex-wrap mt-2 list-unstyled" id="ramContainer"></ul>
+                    </div>
+                    <div class="arrivals-section">
+                        <h2 class="filter-data-title">NEW ARRIVALS</h2>
+                        <a class="data d-block mt-2 text-decoration-none cursor-pointer">Last 30 days</a>
+                        <a class="data text-decoration-none cursor-pointer">Last 90 days</a>
+                    </div>
+                    <div class="mt-5 mb-2">
+                        <button type="button" class="details-button w-100" id="applyButton">APPLY</button>
+                    </div>
+                    <button type="button" class="details-button w-100" id="clearButton">CLEAR FILTER</button>
+                </aside>
+                <div class="col-12 col-md-8 col-lg-8 col-xl-9 d-md-flex flex-column">
+                    <div class="d-flex align-items-center search-details align-self-end">
+                        <input type="search" class="search-input" placeholder="Search for product, brand & more"
+                            id="searchInput" />
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+
+                    <ul class="grid-container list-unstyled mt-4" id="gridContainer">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
+    <!-- <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+{
+    "mobiledata":[
+        {
+            "id":1,
+            "image":"https://i.ibb.co/CsD9WnS/oneplus-nord.png",
+            "title":"OnePlus Nord",
+            "price":30000,
+            "camera":[13, "MP"],
+            "ram":[6, "GB"],
+            "storage":[128, "GB"],
+            "brand":"OnePlus",
+            "color":"skyblue"
+        },
+        {
+            "id":2,
+            "image":"https://i.ibb.co/9srC7L2/oneplus.png",
+            "title":"One Plus",
+            "brand":"OnePlus",
+            "price":42000,
+            "camera": [48, "MP"],
+            "ram":[6, "GB"],
+            "storage":[256, "GB"],
+            "color":"gray"
+        },
+        {
+            "id":3,
+            "image":"https://i.ibb.co/2S39wmH/nokia.png",
+            "brand":"Nokia",
+            "title":"Nokia C01",
+            "price":24000,
+            "camera":[20, "MP"],
+            "ram":[6, "GB"],
+            "storage":[128, "GB"],
+            "color":"black"
+        },
+        {
+            "id":4,
+            "image":"https://i.ibb.co/LtLnqz1/motorola.png",
+            "title":"Motorola E40",
+            "brand":"Motorola",
+            "price":14000,
+            "camera":[13, "MP"],
+            "ram":[4, "GB"],
+            "storage":[64, "GB"],
+            "color":"black"
+        },
+        {
+            "id":5,
+            "image":"https://i.ibb.co/ZYsWZVY/redmi-note9.png",
+            "title":"Redmi note 9 pro",
+            "brand":"Redmi",
+            "price":18000,
+            "camera":[48, "MP"],
+            "ram":[4, "GB"],
+            "storage":[64, "GB"],
+            "color":"green"
+        },
+        {
+            "id":6,
+            "image":"https://i.ibb.co/2htHgjZ/iphone-13.png",
+            "title":"iPhone 13",
+            "brand":"iPhone",
+            "price":80000,
+            "camera":[12, "MP"],
+            "ram":[16, "GB"],
+            "storage":[128, "GB"],
+            "color":"red"
+        },
+        {
+            "id":7,
+            "image":"https://i.ibb.co/YBRBvdJ/samsung-f22.png",
+            "title":"Samsung F22",
+            "brand":"samsung",
+            "price":30000,
+            "camera":[13, "MP"],
+            "ram":[6, "GB"],
+            "storage":[128, "GB"],
+            "color":"black"
+        },
+        {
+            "id":8,
+            "image":"https://i.ibb.co/9cVbWhJ/redmi-note10s.png",
+            "title":"Redmi Note 10s",
+            "brand":"Redmi",
+            "price":30000,
+            "camera":[64, "MP"],
+            "ram":[8, "GB"],
+            "storage":[256, "GB"],
+            "color":"darkgray"
+        }
+
+    ]
+}
