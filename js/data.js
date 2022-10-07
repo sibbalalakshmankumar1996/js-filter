@@ -79,7 +79,7 @@ function displayResults(products) {
     }
 }
 
-let url = "http://localhost:3000/mobiledata";
+let url = "../database/mobileData.json";
 
 const getData = async () => {
     try {
